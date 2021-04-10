@@ -5,10 +5,7 @@
 # Personal task manager 
 
 ## About 
-This memory was created for people who like memory games and for people who want to be able to train their memory.
-The goal of this site was to build a fun and good looking game that is fun to play. 
 
-I like memory games myself and wanted to create a game with themes that I like. 
 
 ## Creating 
 
@@ -61,6 +58,7 @@ I like memory games myself and wanted to create a game with themes that I like.
 o	Git
 o	Font-Awsome
 o	Google Fonts
+
 
 
 ## Testing
