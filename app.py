@@ -27,10 +27,7 @@ def get_tasks():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    if request.method == "POST":
-        # check if username already exists in db
-        existing_user = mongo.db.users.find_one(
-            {"username": request.form.get("username").lower()})
+    return render_template("register.html")
 
 
 if __name__ == "__main__":
