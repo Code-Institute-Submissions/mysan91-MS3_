@@ -45,9 +45,15 @@
 
 
 
-
-### Features 
-
+ ### Features that is implemented:
+ * 	HTML
+ HTML was used for the structure of the website.
+*  Javascript 
+    Javascript was 
+ * CSS 
+    CSS was used to style the website and change sizes, color, background and positions of different items where i did not use bootstrap.
+  *	Google Chrome inspect Tool
+ Google Chrome Inspect and Developer tools was used for examining the website and how it worked on different screens. 
 
 
 ### Technologies used 
