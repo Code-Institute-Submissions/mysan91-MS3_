@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(".sidenav").sidenav({
-        edge: "left"
+        edge: "right"
     });
     $(".collapsible").collapsible();
 });
