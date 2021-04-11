@@ -3,11 +3,6 @@ html {
     height: 100%;
 }
 
-#body1 {
-    background-image: url("https://raw.githubusercontent.com/mysan91/MS3/master/static/images/round.jpg");
-    background-repeat: no-repeat;
-
-}
 
 .responsive-img {
 
@@ -32,4 +27,10 @@ html {
 
 .nav-wrapper {
     background-color: ;
+}
+
+
+/* Register page*/
+.flashes h4 {
+    line-height: 2;
 }
