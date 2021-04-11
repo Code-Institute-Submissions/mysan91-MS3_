@@ -20,61 +20,94 @@
 </head>
 
 <body>
-
     <header>
+        <!--Top navbar-->
 
-        <!-- Page Header -->
+        <nav class="nav-extended text-shadow light-blue darken-1">
+            <div class="nav-wrapper">
+                <a href="{{ url_for('get_tasks') }}" class="brand-logo">Task Manager</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">New Task</a></li>
+                    <li><a href="#">Manage Categories</a></li>
+                    <li><a href="#">Log Out</a></li>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="{{ url_for('register') }}">Register</a></li>
+                </ul>
+            </div>
+        </nav>
 
-        <h3 class="center-align page-header">Register</h3>
-        <h5 class="center-align">Register now to start making a good structure</h5>
-
-
-        <!-- Signup Form -->
-
-        <div class="row">
-            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
-                <div class="card-panel">
-
-                    <!-- username -->
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="username" name="username" type="text" minlength="3" maxlength="15"
-                                pattern="^[a-zA-Z0-9]{5,12}$" class="validate" required>
-                            <label for="username">Create Username</label>
-                        </div>
-                    </div>
-
-                    <!-- password -->
-
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="password" name="password" type="password" minlength="5" maxlength="15"
-                                pattern="^[a-zA-z0-9]{5,15}$" class="validate" required>
-                            <label for="confirm-password">Enter Password</label>
-                        </div>
-                    </div>
+        <!-- mobile sidenav -->
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <h4 class="center-align light-blue-text text-darken 4">Task Manager</h4>
+            </li>
+            <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">New Task</a></li>
+            <li><a href="#">Manage Categories</a></li>
+            <li><a href="#">Log Out</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
+        </ul>
+    </header>
 
 
 
-                    <!-- confirm password -->
+    <!-- Page text -->
 
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="confirm-password" name="confirm-password" type="password" minlength="5"
-                                maxlength="15" pattern="^[a-zA-z0-9]{5,15}$" class="validate" required>
-                            <label for="confirm-password">Confirm Password</label>
-                        </div>
-                    </div>
+    <h3 class="center-align page-header">Register</h3>
+    <h5 class="center-align">Register now to start making a good structure</h5>
 
-                    <!-- register -->
-                    <div class="row">
-                        <button type="submit" id="register-btn"
-                            class="col s12 btn-large deep-purple darken-1 text-shadow">Register<i
-                                class="fas fa-sign-in-alt"></i></button>
+
+    <!-- Signup Form -->
+
+    <div class="row">
+        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+            <div class="card-panel">
+
+                <!-- username -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="username" name="username" type="text" minlength="3" maxlength="15"
+                            pattern="^[a-zA-Z0-9]{5,12}$" class="validate" required>
+                        <label for="username">Create Username</label>
                     </div>
                 </div>
-            </form>
-        </div>
+
+                <!-- password -->
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" name="password" type="password" minlength="5" maxlength="15"
+                            pattern="^[a-zA-z0-9]{5,15}$" class="validate" required>
+                        <label for="confirm-password">Enter Password</label>
+                    </div>
+                </div>
+
+
+
+                <!-- confirm password -->
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="confirm-password" name="confirm-password" type="password" minlength="5"
+                            maxlength="15" pattern="^[a-zA-z0-9]{5,15}$" class="validate" required>
+                        <label for="confirm-password">Confirm Password</label>
+                    </div>
+                </div>
+
+                <!-- register -->
+                <div class="row">
+                    <button type="submit" id="register-btn"
+                        class="col s12 btn-large deep-purple darken-1 text-shadow">Register<i
+                            class="fas fa-sign-in-alt"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
 
 </body>
 
