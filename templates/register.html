@@ -1,53 +1,83 @@
-{% extends "base.html" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- Page Header -->
-<h3 class="center-align page-header">Register</h3>
-<h5 class="text-center mb-5">Register now to start making a good structure</h5>
-
-
-<!-- Signup Form -->
-
-<div class="row">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
-        <div class="card-panel">
-
-            <!-- username -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="username" name="username" type="text" minlength="3" maxlength="15"
-                        pattern="^[a-zA-Z0-9]{5,12}$" class="validate" required>>
-                    <label for="username">Create Username</label>
-                </div>
-            </div>
-
-            <!-- password -->
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="password" name="password" type="password" minlength="5" maxlength="15"
-                        pattern="^[a-zA-Z0-9]{5,12}$" class="validate" required>
-                    <label for="password" class="white-text">Enter Password 5-15 Characters</label>
-                </div>
-            </div>
-
-            <!-- confirm password -->
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="confirm-password" name="confirm-password" type="password" minlength="5" maxlength="15"
-                        pattern="^[a-zA-z0-9]{5,15}$" class="validate" required>
-                    <label for="confirm-password">Confirm Password</label>
-                </div>
-            </div>
-
-            <!-- register -->
-            <div class="row">
-                <button type="submit" id="register-btn"
-                    class="col s12 btn-large deep-purple darken-1 text-shadow">Register <i
-                        class="fas fa-sign-in-alt"></i></button>
-            </div>
-        </div>
-    </form>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FontAwesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" type="text/css">
+    <!--Materialize CSS CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    {% block styles %}
     {% endblock %}
+    <title>Personal Task Manager</title>
+
+
+</head>
+
+<body>
+
+    <img class="responsive-img" src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/round.jpg">
+
+    <header>
+
+        <!-- Page Header -->
+
+        <h3 class="center-align page-header">Register</h3>
+        <h5 class="center-align">Register now to start making a good structure</h5>
+
+
+        <!-- Signup Form -->
+
+        <div class="row">
+            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+                <div class="card-panel">
+
+                    <!-- username -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="username" name="username" type="text" minlength="3" maxlength="15"
+                                pattern="^[a-zA-Z0-9]{5,12}$" class="validate" required>>
+                            <label for="username">Create Username</label>
+                        </div>
+                    </div>
+
+                    <!-- password -->
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" name="password" type="password" minlength="5" maxlength="15"
+                                pattern="^[a-zA-z0-9]{5,15}$" class="validate" required>
+                            <label for="confirm-password">Enter Password</label>
+                        </div>
+                    </div>
+
+
+
+                    <!-- confirm password -->
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="confirm-password" name="confirm-password" type="password" minlength="5"
+                                maxlength="15" pattern="^[a-zA-z0-9]{5,15}$" class="validate" required>
+                            <label for="confirm-password">Confirm Password</label>
+                        </div>
+                    </div>
+
+                    <!-- register -->
+                    <div class="row">
+                        <button type="submit" id="register-btn"
+                            class="col s12 btn-large deep-purple darken-1 text-shadow">Register<i
+                                class="fas fa-sign-in-alt"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+</body>
+
+</html>
