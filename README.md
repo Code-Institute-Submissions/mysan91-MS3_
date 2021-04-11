@@ -46,24 +46,46 @@
 
 
  ### Features that is implemented:
- * 	HTML
- HTML was used for the structure of the website.
-*  Javascript 
-    Javascript was 
- * CSS 
-    CSS was used to style the website and change sizes, color, background and positions of different items where i did not use bootstrap.
-  *	Google Chrome inspect Tool
- Google Chrome Inspect and Developer tools was used for examining the website and how it worked on different screens. 
+####  Existing features
+
+The website uses Materialize CSS:
+
+o Navbar 
+o Sidenav 
+o Form (to register and log in)
+o Footer (bottom footer)
+o Hero image (on the home page)
+
+Other features being used:
+o Site linked to Heroku
+o Site linked to Mongodb database
+o Login/register
+o CRUD
 
 
 ### Technologies used 
+Languages:
+
+o HTML5
+o CSS3
+o Javascript
+o Python3 
+
+Database:
+o Mongodb
+
+Frameworks:
+o Flask
+o Jquery
+o Materialize CSS
 
 
-
-### Tools & Libraries
-o	Git
+Tools & Libraries:
+o	Gitpod
+o   Github
 o	Font-Awsome
 o	Google Fonts
+o   Heroku
 
 
 
@@ -74,9 +96,21 @@ o	Google Fonts
 
 ## Deployment 
 
+MongoDB 
 
+The following collection was used for the tasks:
 
+Deployment to Heroku
+IP
+PORT
+MONGO_DBNAME
+MONGO_URI
+SECRET_KEY
+
+GitHub
+
+To clone the code from GitHub:
 
 ## Credits 
 
-
+Hero image on homepage from Pexels.com
