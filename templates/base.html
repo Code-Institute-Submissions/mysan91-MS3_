@@ -9,6 +9,9 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css type="text/css">
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
     <title>Personal Task Manager</title>
+    {% block styles %}
+    {% endblock %}
+    <title>Task Manager</title>
 </head>
 
 <body>
@@ -19,7 +22,9 @@
                                                                                                                                   
      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>                                                                                                                         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="{{ url_for('static', filename='index.js') }}"></script>                                                                                            
+    <script src="{{ url_for('static', filename='index.js') }}"></script>     
+    {% block scripts %}
+    {% endblock %}
 </body>
 
 </html>
