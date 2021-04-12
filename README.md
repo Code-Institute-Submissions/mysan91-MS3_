@@ -67,7 +67,10 @@ Other features being used:
 Languages:
 
 • HTML5
+HTML was used for the main structure of the website.
 • CSS3
+CSS was used to style and change sizes.
+
 • Javascript
 • Python3 
 
@@ -76,7 +79,9 @@ Database:
 
 Frameworks:
 • Flask
+Requests and flash messages.
 • Jquery
+JQuery was used for materialize features that needed javascript.
 • Materialize CSS
 
 
