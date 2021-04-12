@@ -50,34 +50,34 @@
 
 The website uses Materialize CSS:
 
-o Navbar 
-o Sidenav 
-o Form (to register and log in)
-o Footer (bottom footer)
-o Hero image (on the home page)
+• Navbar 
+• Mobile Sidenav 
+• Form (to register and log in)
+• Footer (bottom footer)
+• Hero image (on the home page)
 
 Other features being used:
-o Site linked to Heroku
-o Site linked to Mongodb database
-o Login/register
-o CRUD
+• Site linked to Heroku
+• Site linked to Mongodb database
+• Login/register
+• CRUD
 
 
 ### Technologies used 
 Languages:
 
-o HTML5
-o CSS3
-o Javascript
-o Python3 
+• HTML5
+• CSS3
+• Javascript
+• Python3 
 
 Database:
-o Mongodb
+• Mongodb
 
 Frameworks:
-o Flask
-o Jquery
-o Materialize CSS
+• Flask
+• Jquery
+• Materialize CSS
 
 
 Tools & Libraries:
