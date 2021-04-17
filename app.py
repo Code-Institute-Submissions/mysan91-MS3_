@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_tasks")
 def get_tasks():
-    tasks = mongo.db.tasks.find()
+    tasks = list(mongo.db.tasks.find())
     return render_template("tasks.html", tasks=tasks)
 
 
@@ -84,7 +84,6 @@ def profile(username):
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
 
     if session["user"]:
         return render_template("profile.html", username=username)
@@ -94,9 +93,9 @@ def profile(username):
 
 @app.route("/logout")
 def logout():
-
+    # remove user from session cookie
     flash("You have been logged out")
-    session.clear()
+    session.pop("user")
     return redirect(url_for("login"))
 
 
