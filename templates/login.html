@@ -22,7 +22,7 @@
 <body>
     <header>
         <!-- top navbar -->
-        <nav class="nav-extended text-shadow light-blue darken-1">
+        <nav class="nav-extended N/A transparent">
             <div class="nav-wrapper">
                 <a href="{{ url_for('get_tasks') }}" class="brand-logo">Task Manager</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
@@ -117,19 +117,6 @@
             </div>
         </form>
     </div>
-
-    <section>
-        <!-- flash messages -->
-        {% with messages = get_flashed_messages() %}
-        {% if messages %}
-        {% for message in messages %}
-        <div class="row flashes">
-            <h4 class="light-blue lighten-4 center-align">{{ message }}</h4>
-        </div>
-        {% endfor %}
-        {% endif %}
-        {% endwith %}
-    </section>
 
 </body>
 
