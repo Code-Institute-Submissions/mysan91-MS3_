@@ -27,12 +27,5 @@ h5 {
 
 /* Green background on the tasks that you can see throug  */
 .card {
-    background-color: rgba(60, 179, 113, 0.75);
-}
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.col {
-    float: left;
-    width: 50%;
-    padding: 5px;
+    background-color: rgba(60, 156, 201, 0.75);
 }
