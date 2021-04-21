@@ -27,7 +27,7 @@
                 <a href="{{ url_for('get_tasks') }}" class="brand-logo">Task Manager</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
+                    <li><a href="{{ url_for('get_tasks') }}">Tasks</a></li>
                     {% if session.user %}
                     <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                     <li><a href="{{ url_for('add_task') }}">New task</a></li>
@@ -108,17 +108,6 @@
                     </div>
                 </div>
 
-
-                <!-- confirm password -->
-
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="confirm-password" name="confirm-password" type="password" minlength="5"
-                            maxlength="15" pattern="^[a-zA-z0-9]{5,15}$" class="validate" required>
-                        <label for="confirm-password">Confirm Password</label>
-                    </div>
-                </div>
-
                 <!-- login -->
                 <div class="row">
                     <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">
@@ -128,6 +117,19 @@
             </div>
         </form>
     </div>
+
+    <section>
+        <!-- flash messages -->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="row flashes">
+            <h4 class="light-blue lighten-4 center-align">{{ message }}</h4>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </section>
 
 </body>
 
