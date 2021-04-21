@@ -29,86 +29,120 @@ If you dont feel that you have a good structure and your want to have a system s
 
 
 ### User Goals
-•	As a user type, i want to be able to contact the site owner. 
-•	As a user type, i want to be able to register and start an account. 
-•	As a user type, i want the site to be easely to navigate on. 
-•	AS a user type, i want to be able to search for a task 
-•	As a user type, i want to see how many tasks i have 
-•	As a user type, i want to see how many tasks i have completed 
-•	As a user type, i want to be able to add tasks
-•	As a user type, i want to be able to edit and delete tasks
-•	As a user type, i want to be able to see all the tasks that i have and also by category. 
+*	As a user type, i want to be able to contact the site owner. 
+*	As a user type, i want to be able to register and start an account. 
+*	As a user type, i want the site to be easely to navigate on. 
+*	AS a user type, i want to be able to search for a task 
+*	As a user type, i want to see how many tasks i have 
+*	As a user type, i want to see how many tasks i have completed 
+*	As a user type, i want to be able to add tasks
+*	As a user type, i want to be able to edit and delete tasks
+*	As a user type, i want to be able to see all the tasks that i have and also by category. 
 
  ### Site Owner Goals 
-•	As the owner i want to build a site that is easy to understand and use
-•	As the owner i want to build a site that looks appealing 
-•	As the owner i want to build a site that is responsive and works on different screens.
-• As the owner i want to build a site that have a good structure
+*	As the owner i want to build a site that is easy to understand and use
+*	As the owner i want to build a site that looks appealing 
+*	As the owner i want to build a site that is responsive and works on different screens.
+* As the owner i want to build a site that have a good structure
 
 
  ### User Requirements 
-•	Having a good structure. 
-•	Easy to navigate 
-•	Visually appealing. 
-•	Footer with icons and locations and contact information.
-•	Contact form
-•	A about section 
-•	Add/edit tasks 
-• Responsive 
-• Se completed tasks
-• Se all the tasks that the user have
+*	Having a good structure. 
+*	Easy to navigate 
+*	Visually appealing. 
+*	Footer with icons and locations and contact information.
+*	Contact form
+*	A about section 
+*	Add/edit tasks 
+* Responsive 
+* Se completed tasks
+* Se all the tasks that the user have
 
 
 ## Design Choices 
 
+#### Home page
+* A hero image 
+* Hero text with a short about section
+* Log in / register navbar 
+* Footer with a contact form 
+
+Picture 
+
+##### Log in/ register page
 
 
- ### Features that is implemented:
-####  Existing features
+#### Add task 
 
-The website uses Materialize CSS:
 
-• Navbar 
-• Mobile Sidenav 
-• Form (to register and log in)
-• Footer (bottom footer)
-• Hero image (on the home page)
+#### Edit task
 
-Other features being used:
-• Site linked to Heroku
-• Site linked to Mongodb database
-• Login/register
-• CRUD
+
+#### Se all tasks 
+
+
+
+### Styling 
+
+### Features that is implemented:
+
+The website uses Materialize CSS on following:
+
+* Navbar 
+* Mobile Sidenav 
+* Form (to register and log in)
+* Hero image (on the home page)
+* Footer on the end of home page
+* Users can login and register to add or edit tasks
+* Users can delete a task
+* Users can edit a task
+* Users can search for a task
+* Users can pick both start and due date to a task 
+* Site linked to Heroku
+* Site linked to Mongodb database
+* Login/register
+* CRUD
+
+### Features left to implement
+* Posibility to sort all tasks in one category 
+* 
+
+
+
 
 
 ### Technologies used 
 Languages:
 
-• HTML5
+* HTML5
 HTML was used for the main structure of the website.
-• CSS3
-CSS was used to style and change sizes.
+* CSS3
+CSS was used to style and change sizes. 
 
-• Javascript
-• Python3 
+* Javascript
+Was used on the dynamic functions on the site 
+
+* Python3 
+
 
 Database:
-• Mongodb
+* Mongodb
 
 Frameworks:
-• Flask
+* Flask
 Requests and flash messages.
-• Jquery
+* Jquery
 JQuery was used for materialize features that needed javascript.
-• Materialize CSS
+* Materialize CSS
 
 
 Tools & Libraries:
-o	Gitpod
-o   Github
-o	Font-Awsome
-o	Google Fonts
-o   Heroku
+*	Gitpod
+* Github
+*	Font-Awsome
+*	Google Fonts
+* Heroku
+* Mondodb 
 
 
 
