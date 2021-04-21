@@ -22,37 +22,44 @@ The project is only a personal task manager and i only want the user to se its o
 
 ## UX 
 
-### Project Goals 
+This site is mainly for personal use and not business.
+Its for a user looking to get a good view and structure of tasks on the to do list. 
+
+If you dont feel that you have a good structure and your want to have a system showing you all your tasks in different categorys this site is for your. 
 
 
 ### User Goals
-•	
-•	
-•	
-•	
-•	
-
-### User Stories
-•	As the user i want it 
-•	As the user i want i 
-•	As the user i want to be able to add a task. 
-•	As the User i want to be able to sent a email to the owner of the site if there is a problem with the site. 
-
-
+•	As a user type, i want to be able to contact the site owner. 
+•	As a user type, i want to be able to register and start an account. 
+•	As a user type, i want the site to be easely to navigate on. 
+•	AS a user type, i want to be able to search for a task 
+•	As a user type, i want to see how many tasks i have 
+•	As a user type, i want to see how many tasks i have completed 
+•	As a user type, i want to be able to add tasks
+•	As a user type, i want to be able to edit and delete tasks
+•	As a user type, i want to be able to see all the tasks that i have and also by category. 
 
  ### Site Owner Goals 
-•	As the owner i want 
-•	As the owner i want 
-•	As the owner i want 
+•	As the owner i want to build a site that is easy to understand and use
+•	As the owner i want to build a site that looks appealing 
+•	As the owner i want to build a site that is responsive and works on different screens.
+• As the owner i want to build a site that have a good structure
+
 
  ### User Requirements 
 •	Having a good structure. 
-•	Navigate using a navbar.
+•	Easy to navigate 
 •	Visually appealing. 
 •	Footer with icons and locations and contact information.
-•	Having a contact form. 
+•	Contact form
+•	A about section 
+•	Add/edit tasks 
+• Responsive 
+• Se completed tasks
+• Se all the tasks that the user have
 
-### Design Choices 
+
+## Design Choices 
 
 
 
