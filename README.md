@@ -5,9 +5,20 @@
 # Personal task manager 
 
 ## About 
-
+The project is a tool to get structure in your life and plan your activities. 
+So i decided to do a personal task manager were your can structure your activities. 
 
 ## Creating 
+After making the mini project i wanted to do my own way of a task manager and add a different structure to it. 
+
+I wanted to build something that is suitabele for my life and what i need to get a good structure and overview of my to do tasks. 
+
+I started by watching the mini project structure again bit by bit to get a good understanding of how to build it and how i could connect the project to the database. 
+
+First off i did almost the same ground coding as the mini project with a few different tasks input. And also a different type of structure of the different pages. 
+
+The project is only a personal task manager and i only want the user to se its own tasks and not everyone elses tasks. 
+
 
 ## UX 
 
