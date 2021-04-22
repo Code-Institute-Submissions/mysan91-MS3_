@@ -204,24 +204,34 @@ The following devices were used:
 * Benq 24 inch screen 
   * When testing the responsivness for the BenQ, All of the sites and content adjust fine and worked well. 
  
-
 ## Deployment 
+The following steps i made to deploy the project on to the github page.
+1. Log in to the github account. 
+2. Pick the repositorie with the name Milestoneprojecttwo. 
+3. After you click on the repositorie push the settings button. 
+4. Scroll down to the Github pages under the source section. 
+5. Click on the none bar and change it to Master.
+6. Save the changes! 
+7. The page then did refresh and the page is published at 
 
-MongoDB 
+### Run the code locally
+1. On the github page navigate to the main page of the repository you want to run. 
+2. Above the list of files press on the code button with the downloadinglink.  
+3. To clone the repository using HTTPS, under "Clone with HTTPS", click on the https link and the link will be copyed. If you want to clone the repository using SSH or Github Cli click on the link tap ob the respective tabs. 
+4. After you have copy the link go to Git Bash and open. 
+5. Change the current working directory to the location where you want to put the cloned directory. 
+6. Type git clone and paste the repository URL.
+7. Press enter to create the local clone. 
 
-The following collection was used for the tasks:
-
-Deployment to Heroku
-IP
-PORT
-MONGO_DBNAME
-MONGO_URI
-SECRET_KEY
-
-GitHub
-
-To clone the code from GitHub:
-
+### Deployment Heroku 
+1. Created a new application using the Heroku dashboard.
+2. Go to settings tab, click on 'reveal config vars' and add config vars such as IP (0.0.0.0), PORT (5000), MongoDB Name, MongoDB URI URL with DB name and password.
+3. Install Heroku via the console using npm install -g Heroku.
+4. Push two new files (requirements.txt and Profile) to repository.
+5. Now in In Heroku, you can Enable Automatic Deployment
+6. Then deploy branch.
+7. That can take a minute to build, once it's done, The message ‘Your app was successfully deployed.’ will be shown then Click ‘View’ to launch your new app: 
+8.
 ## Credits 
 Hero image on homepage from Pexels.com
 Codeinsitute mini project for information and how to structure the site 
