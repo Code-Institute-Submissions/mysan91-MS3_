@@ -151,9 +151,58 @@ Tools & Libraries:
 
 
 ## Testing
+#### User story Testing 
+* User want to be able so register to the page. 
+  * The user can navigate to the Register page and type in a new username and a password. 
 
+* User want to log in on the page
+  * After register to the page the user can click on log in in type in the username and password and will be logged in. 
+  The User will then be loggen in and get to the profile page. New items will be shown in the navbar such as Tasks,Profile, New task, Manage task and log out. 
 
+* User want to see the tasks 
+    * The user can now click on the task item in the navbar to get to the tasks site and see all the tasks that the user have.
 
+* User want to edit or mark a task as done.
+  * The user can easely edit and mark the task as done in the tasks meny, Under each tasks the two buttons edit and done shows. 
+    The done button takes away the task. And the edit button takes you to an other site were your can make changes to your current task. 
+
+* User want to make a new task
+  * The user can click on New task, And start adding category, task name and task description, start date and due date. Then click on add task and the task will be added to the Tasks site. 
+
+* User want to manage Categories 
+  * User can click on the Manage Categories in the navbar to see all the categorys and be able to edit or delete a category. 
+
+* User want to log out 
+  * User can click on the log out item in the navbar. 
+
+#### General testing 
+
+* All links on the site works well and are being opened with success. 
+* The page/linkes such as add task, manage categories and profile will will only be shown when the user is logged in. 
+* Register with the user mysans with success. 
+* Register with the user test1 and it worked with success, the new user was added to the database and was logged in. 
+* Test to start a new task with the new user and it worked well. 
+* Tested to delete a task and that also worked well. 
+* Tested to manage categories and add a category and that worked well. 
+* Tested to edit a category and that worked well. 
+* Tested to delete a category and that worked well. 
+
+##### Responsiv test
+In this test i used the Google inspect tool 
+The following devices were used: 
+
+* Ipad 
+  * When testing the responsivness for the Ipad, The navbar adjust and poped up at the right and the tasks also adjusted fine. 
+  All the different sizes worked fine. 
+* Iphone X
+  * When testing the responsivness for the Iphone X, The navbar adjust and poped up at the right and the tasks also adjusted fine. 
+  All the different sizes worked fine. 
+* Iphone 6/7/8 
+  * When testing the responsivness for the Iphone 6/7/8, The navbar adjust and poped up at the right and the tasks also adjusted fine. 
+  All the different sizes worked fine. 
+* Benq 24 inch screen 
+  * When testing the responsivness for the BenQ, All of the sites and content adjust fine and worked well. 
+ 
 
 ## Deployment 
 
