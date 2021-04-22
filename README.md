@@ -214,6 +214,8 @@ The following steps i made to deploy the project on to the github page.
 6. Save the changes! 
 7. The page then did refresh and the page is published at 
 
+### Deploymen Mongo DB 
+
 ### Run the code locally
 1. On the github page navigate to the main page of the repository you want to run. 
 2. Above the list of files press on the code button with the downloadinglink.  
@@ -231,7 +233,10 @@ The following steps i made to deploy the project on to the github page.
 5. Now in In Heroku, you can Enable Automatic Deployment
 6. Then deploy branch.
 7. That can take a minute to build, once it's done, The message ‘Your app was successfully deployed.’ will be shown then Click ‘View’ to launch your new app: 
-8.
+
+
+
+
 ## Credits 
 Hero image on homepage from Pexels.com
 Codeinsitute mini project for information and how to structure the site 
