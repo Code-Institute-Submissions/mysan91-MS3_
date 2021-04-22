@@ -1,5 +1,6 @@
 
-<img src="" style="width:550px">
+<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/tasks.JPG" style="width:550px">
+
 
 
 # Personal task manager 
@@ -67,19 +68,19 @@ If you dont feel that you have a good structure and your want to have a system s
 * Log in / register navbar 
 * Footer with a contact form 
 
-Picture 
 
 ##### Log in/ register page
 
 
 #### Add task 
-
+<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addtasks.JPG" style="width:200px">
 
 #### Edit task
 
 
 #### Se all tasks 
-
+<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/tasks.JPG" style="width:200px">
+#### Manage Categorys 
 
 
 ### Styling 
@@ -92,11 +93,9 @@ The website uses Materialize CSS on following:
 * Mobile Sidenav 
 * Form (to register and log in)
 * Hero image (on the home page)
-* Footer on the end of home page
 * Users can login and register to add or edit tasks
 * Users can delete a task
 * Users can edit a task
-* Users can search for a task
 * Users can pick both start and due date to a task 
 * Site linked to Heroku
 * Site linked to Mongodb database
@@ -105,10 +104,6 @@ The website uses Materialize CSS on following:
 
 ### Features left to implement
 * Posibility to sort all tasks in one category 
-* 
-
-
-
 
 
 ### Technologies used 
@@ -123,13 +118,23 @@ CSS was used to style and change sizes.
 Was used on the dynamic functions on the site 
 
 * Python3 
+Used as Back-End programming language
 
+* Pymongo 
+Used as Python's API for MongoDB intergration.
+
+* Flask rendering template, URIs Requests and the flash messages.
+
+* BSON for accessing the data in MongoDB and to access IDs. 
+
+* Werkzeug was user to hash password when registering to the site and encrypting on MongoDB.
 
 Database:
-* Mongodb
+* MongoDB was used to store all data for the website.
 
-Frameworks:
-* Flask
+* Heroku
+Used for hosting my full stack app.
+
 Requests and flash messages.
 * Jquery
 JQuery was used for materialize features that needed javascript.
@@ -141,8 +146,7 @@ Tools & Libraries:
 * Github
 *	Font-Awsome
 *	Google Fonts
-* Heroku
-* Mondodb 
+* Google Chrome
 
 
 
