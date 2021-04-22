@@ -217,7 +217,7 @@ The following steps i made to deploy the project on to the github page.
 ### Deploymen Mongo DB 
 
 ### Run the code locally
-1. On the github page navigate to the main page of the repository you want to run. 
+1. On the github page navigate to the main page of the repository you want to run. Check repository https://github.com/mysan91/MS3 
 2. Above the list of files press on the code button with the downloadinglink.  
 3. To clone the repository using HTTPS, under "Clone with HTTPS", click on the https link and the link will be copyed. If you want to clone the repository using SSH or Github Cli click on the link tap ob the respective tabs. 
 4. After you have copy the link go to Git Bash and open. 
@@ -232,7 +232,7 @@ The following steps i made to deploy the project on to the github page.
 4. Push two new files (requirements.txt and Profile) to repository.
 5. Now in In Heroku, you can Enable Automatic Deployment
 6. Then deploy branch.
-7. That can take a minute to build, once it's done, The message ‘Your app was successfully deployed.’ will be shown then Click ‘View’ to launch your new app: 
+7. That can take a minute to build, once it's done, The message ‘Your app was successfully deployed.’ will be shown then Click ‘View’ to launch your new app: https://ms3taskmanager.herokuapp.com/
 
 
 
