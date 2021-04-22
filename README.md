@@ -67,20 +67,21 @@ If you dont feel that you have a good structure and your want to have a system s
 * Hero text with a short about section
 * Log in / register navbar 
 * Footer with a contact form 
-
+<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/home.JPG" style="width:200px">
 
 ##### Log in/ register page
-
+<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/registrer.JPG" style="width:100px">
+<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/signin.JPG" style="width:100px">
 
 #### Add task 
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addtasks.JPG" style="width:200px">
 
-#### Edit task
-
 
 #### Se all tasks 
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/tasks.JPG" style="width:200px">
+
 #### Manage Categorys 
+<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addcategory.JPG" style="width:200px">
 
 
 ### Styling 
@@ -222,5 +223,7 @@ GitHub
 To clone the code from GitHub:
 
 ## Credits 
-
 Hero image on homepage from Pexels.com
+Codeinsitute mini project for information and how to structure the site 
+
+
