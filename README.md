@@ -215,7 +215,41 @@ The following steps i made to deploy the project on to the github page.
 7. The page then did refresh and the page is published at 
 
 ### Deploymen Mongo DB 
+Mongo DB is used for tha database in this project 
+Start by going to https://www.mongodb.com/ and creata a account. 
+1. Start by creating a new Cluster. 
+2. Then create database Task_manager. ANd add the collection name categories.
+3. Then click on create collections. 
+4. Users, Tasks, categories has already been created on step 3.
+5. To insert documents to a collection click on the collection categories and then insert document.
+6. The following string collections was used: 
+* category_name 
+* task_name
+* task_description
+* start_date
+* due_date
+* created_by 
+* username
+* password
 
+7. Go back to github and the repository.
+8. Above the list of files click on the code button. 
+9. To clone the repository using HTTPS, click HTTPS under "Clone".
+10. Press Enter to create your local clone.
+11. Create your own env.py file to store variables
+  * Import os
+  * os.environ.setdefault("IP", "enter value")
+  * os.environ.setdefault("PORT", "enter value")
+  * os.environ.setdefault("SECRET_KEY", "enter value")
+  * os.environ.setdefault("MONGO_URI", "enter value")
+  * os.environ.setdefault("MONGO_DBNAME", "enter value")
+
+12. In mongoDB click on the overview button and connect.
+13. Pick connect your application.
+14. And pick python and version.
+15. Copy the link and paste it in the ("MONGO_URI", "enter value")
+16. Update the undername and password in the link.
+17. 
 ### Run the code locally
 1. On the github page navigate to the main page of the repository you want to run. Check repository https://github.com/mysan91/MS3 
 2. Above the list of files press on the code button with the downloadinglink.  
