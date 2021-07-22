@@ -188,6 +188,11 @@ Tools & Libraries:
 * Tested to edit a category and that worked well. 
 * Tested to delete a category and that worked well. 
 
+| Tested funcitons  | Sections tested |
+| ------------- | ------------- |
+| Responsiveness  | Login  |
+| Content Cell  | Content Cell  |
+
 ##### Responsiv test
 In this test i used the Google inspect tool 
 The following devices were used: 
