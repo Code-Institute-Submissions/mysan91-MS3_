@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="center-align">Edit Bucketlist items</h3>
+
+<div class="row card-panel">
+    <form class="col s12 m12 l12" method="POST" action="{{ url_for('edit_task', task_id=task._id) }}">
+
+        <!-- Bucketlist Number -->
+
+        <div class="row">
+            <div class="input-field col s12 m12 l12">
+                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                <input id="bucketlist_number" name="bucketlist_number" minlength="1" maxlength="500"
+                    value="{{ task.bucketlist_number}}" type="text" class="validate" required>
+                <label for="bucketlist_number">Bucketlist number</label>
+            </div>
+        </div>
+
+        <!-- Bucketlist name -->
+        <div class="row">
+            <div class="input-field col s12 m12 l12">
+                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                <input id="bucketlist_name" name="task_name" minlength="3" maxlength="50" value="{{ task.task_name }}"
+                    type="text" class="validate" required>
+                <label for="bucketlist_name">Task Name</label>
+            </div>
+        </div>
+        <!-- submit button -->
+        <div class="row">
+            <div class="col s12 m12 l12 center-align">
+                <!-- cancel button -->
+                <a href="{{ url_for('get_tasks') }}" class="btn-large red text-shadow">
+                    Cancel <i class="fas fa-times-circle right"></i>
+                </a>
+                <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+                    Edit Task <i class="fas fa-edit right"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
