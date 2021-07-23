@@ -1,39 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="center-align">Edit Bucketlist items</h3>
+<h3 class="center-align">Edit bucketlsit item</h3>
 
 <div class="row card-panel">
     <form class="col s12 m12 l12" method="POST" action="{{ url_for('edit_task', task_id=task._id) }}">
-
-        <!-- Bucketlist Number -->
-
+        <!-- Bucketlist number -->
         <div class="row">
             <div class="input-field col s12 m12 l12">
                 <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
-                <input id="bucketlist_number" name="bucketlist_number" minlength="1" maxlength="500"
-                    value="{{ task.bucketlist_number}}" type="text" class="validate" required>
+                <input id="bucketlist_number" name="bucketlist_number" minlength="0" maxlength="500" value="{{ bucketlist.bucketlist_number }}"
+                    type="number" class="validate" required>
                 <label for="bucketlist_number">Bucketlist number</label>
             </div>
         </div>
-
-        <!-- Bucketlist name -->
+        <!-- Bucketlist description -->
         <div class="row">
             <div class="input-field col s12 m12 l12">
-                <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
-                <input id="bucketlist_name" name="task_name" minlength="3" maxlength="50" value="{{ task.task_name }}"
-                    type="text" class="validate" required>
-                <label for="bucketlist_name">Task Name</label>
+                <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                <textarea id="bucketlist_description" name="bucketlist_description" minlength="5" maxlength="200"
+                    class="materialize-textarea validate" required>
+                        {{- bucketlist.bucketlist_description -}}
+                    </textarea>
+                <label for="bucketlist_description">Bucketlist Description</label>
             </div>
         </div>
+
         <!-- submit button -->
         <div class="row">
             <div class="col s12 m12 l12 center-align">
                 <!-- cancel button -->
-                <a href="{{ url_for('get_tasks') }}" class="btn-large red text-shadow">
+                <a href="{{ url_for('bucketlist') }}" class="btn-small red text-shadow">
                     Cancel <i class="fas fa-times-circle right"></i>
                 </a>
-                <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+                <button type="submit" class="btn-small light-blue darken-1 text-shadow">
                     Edit Task <i class="fas fa-edit right"></i>
                 </button>
             </div>
