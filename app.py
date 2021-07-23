@@ -110,6 +110,24 @@ def get_tasks():
     tasks = list(mongo.db.bucketlist.find())
     return render_template("bucketlist.html", bucketlist=bucketlist)
 
+# add bucketlist function
+
+
+@app.route("/add_bucket", methods=["GET", "POST"])
+def add_bucket():
+    if request.method == "POST":
+
+        bucketlist = {
+            "bucketlist_number": request.form.get("bucketlist_number"),    
+            "bucketlist_description": request.form.get("bucketlist_description"),  
+        }
+        mongo.db.tasks.insert_one(bucketlist)
+        flash("bucketlist item Successfully Added")
+        return redirect(url_for("bucketlist"))
+
+    categories = mongo.db.categories.find().sort("bucketlist_number", 1)
+    return render_template("add_bucket.html", categories=categories)
+
 
 # Add Task Function
 
