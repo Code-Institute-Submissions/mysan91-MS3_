@@ -60,7 +60,7 @@
     </header>
 
     <section>
-        <header>
+        <h4>
         <!-- flash messages -->
         {% with messages = get_flashed_messages() %}
         {% if messages %}
@@ -70,8 +70,8 @@
         </div>
         {% endfor %}
         {% endif %}
-        {% endwith %}
-         </header>
+        {% endwith %} 
+        </h4> 
     </section>
 
     {% block content %}
