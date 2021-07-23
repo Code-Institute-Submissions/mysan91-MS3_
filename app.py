@@ -103,6 +103,14 @@ def profile(username):
     return redirect(url_for("login"))
 
 
+# Get bucketlist function
+@app.route("/")
+@app.route("/get_tasks")
+def get_tasks():
+    tasks = list(mongo.db.bucketlist.find())
+    return render_template("bucketlist.html", bucketlist=bucketlist)
+
+
 # Add Task Function
 
 
