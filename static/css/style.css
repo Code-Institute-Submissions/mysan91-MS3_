@@ -7,10 +7,7 @@ body {
     background-position: center center;
     overflow: auto;
     height: 100%;
-
 }
-
-
 /* H element in white to easely see the text */
 h3 {
     color: white;
@@ -23,18 +20,14 @@ h5 {
 h6 {
     color: white;
 }
-
-
 /* white background that you can see through */
 .card-panel {
     background-color: rgba(255, 255, 255, 0.75);
 }
-
 /* Blue background on the tasks that you can see through  */
 .card {
     background-color: rgba(60, 156, 201, 0.75);
 }
-
 /* Blue background on the tasks that you can see through  */
 .card-content2 {
     background-color: rgba(60, 156, 201, 0.75);
