@@ -119,17 +119,17 @@ def add_bucket():
     if request.method == "POST":
 
         bucketlist = {
-            "bucketlist_number": request.form.get("bucketlist_number"),    
-            "bucketlist_description": request.form.get("bucketlist_description"),  
+            "bucketlist_number": request.form.get("bucketlist_number"),
+            "bucketlist_description": request.form.get("bucketlist_description"),
         }
         mongo.db.bucketlist.insert_one(bucketlist)
         flash("bucketlist item Successfully Added")
         return redirect(url_for("bucketlist"))
 
-    categories = mongo.db.bucketlist.find().sort("bucketlist_number", 1)
+    bucketlist = mongo.db.bucketlist.find().sort("bucketlist_number", 1)
     return render_template("add_bucket.html",)
 
-# Edit bucketlist item 
+# Edit bucketlist
 
 
 @app.route("/edit_bucketlist/<bucketlist_id>", methods=["GET", "POST"])
@@ -137,22 +137,22 @@ def edit_bucketlist(bucketlist_id):
     if request.method == "POST":
 
         submit = {
-            "bucketlist_number": request.form.get("bucketlist_number"),  
+            "bucketlist_number": request.form.get("bucketlist_number"),
             "bucketlist_description": request.form.get("bucketlist_description"),
-           
-        }
+         }
         mongo.db.bucketlist.update({"_id": ObjectId(bucketlist_id)}, submit)
         flash("Bucketlist item updated")
 
-    task = mongo.db.bucketlist.find_one({"_id": ObjectId(bucketlist_id)})
-    categories = mongo.db.categories.find().sort("bucketlist_number", 1)
+    bucketlist = mongo.db.bucketlist.find_one({"_id": ObjectId(bucketlist_id)})
+    bucketlist = mongo.db.bucketlist_number.find().sort("bucketlist_number", 1)
     return render_template("edit_bucket.html", bucketlist=bucketlist,)
 
 # Delete Tasktype Function
 
+
 @app.route("/delete_bucketlist/<bucketlist_id>")
 def delete_bucketlist(bucketlist_id):
-    mongo.db.tasks.remove({"_id": ObjectId(task_id)})
+    mongo.db.tasks.remove({"_id": ObjectId(bucketlist_id)})
     flash("Task has been Deleted")
     return redirect(url_for("get_tasks"))
 # Add Task Function
