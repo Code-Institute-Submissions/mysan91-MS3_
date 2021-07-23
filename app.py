@@ -106,9 +106,9 @@ def profile(username):
 # Get bucketlist function
 
 @app.route("/")
-@app.route("/get_tasks")
-def get_tasks():
-    tasks = list(mongo.db.bucketlist.find())
+@app.route("/bucketlist")
+def bucketlist():
+    bucketlist = list(mongo.db.bucketlist.find())
     return render_template("bucketlist.html", bucketlist=bucketlist)
 
 # add bucketlist function
@@ -122,18 +122,18 @@ def add_bucket():
             "bucketlist_number": request.form.get("bucketlist_number"),    
             "bucketlist_description": request.form.get("bucketlist_description"),  
         }
-        mongo.db.tasks.insert_one(bucketlist)
+        mongo.db.bucketlist.insert_one(bucketlist)
         flash("bucketlist item Successfully Added")
         return redirect(url_for("bucketlist"))
 
-    categories = mongo.db.categories.find().sort("bucketlist_number", 1)
-    return render_template("add_bucket.html", categories=categories)
+    categories = mongo.db.bucketlist.find().sort("bucketlist_number", 1)
+    return render_template("add_bucket.html",)
 
 # Edit bucketlist item 
 
 
-@app.route("/edit_bucketlist/<task_id>", methods=["GET", "POST"])
-def edit_bucketlist(task_id):
+@app.route("/edit_bucketlist/<bucketlist_id>", methods=["GET", "POST"])
+def edit_bucketlist(bucketlist_id):
     if request.method == "POST":
 
         submit = {
@@ -141,14 +141,20 @@ def edit_bucketlist(task_id):
             "bucketlist_description": request.form.get("bucketlist_description"),
            
         }
-        mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit)
+        mongo.db.bucketlist.update({"_id": ObjectId(bucketlist_id)}, submit)
         flash("Bucketlist item updated")
 
-    task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
+    task = mongo.db.bucketlist.find_one({"_id": ObjectId(bucketlist_id)})
     categories = mongo.db.categories.find().sort("bucketlist_number", 1)
-    return render_template("edit_bucket.html", task=task, categories=categories)
+    return render_template("edit_bucket.html", bucketlist=bucketlist,)
 
+# Delete Tasktype Function
 
+@app.route("/delete_bucketlist/<bucketlist_id>")
+def delete_bucketlist(bucketlist_id):
+    mongo.db.tasks.remove({"_id": ObjectId(task_id)})
+    flash("Task has been Deleted")
+    return redirect(url_for("get_tasks"))
 # Add Task Function
 
 
