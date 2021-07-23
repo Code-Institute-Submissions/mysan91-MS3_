@@ -104,6 +104,7 @@ def profile(username):
 
 
 # Get bucketlist function
+
 @app.route("/")
 @app.route("/get_tasks")
 def get_tasks():
@@ -127,6 +128,25 @@ def add_bucket():
 
     categories = mongo.db.categories.find().sort("bucketlist_number", 1)
     return render_template("add_bucket.html", categories=categories)
+
+# Edit bucketlist item 
+
+
+@app.route("/edit_bucketlist/<task_id>", methods=["GET", "POST"])
+def edit_bucketlist(task_id):
+    if request.method == "POST":
+
+        submit = {
+            "bucketlist_number": request.form.get("bucketlist_number"),  
+            "bucketlist_description": request.form.get("bucketlist_description"),
+           
+        }
+        mongo.db.tasks.update({"_id": ObjectId(task_id)}, submit)
+        flash("Bucketlist item updated")
+
+    task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
+    categories = mongo.db.categories.find().sort("bucketlist_number", 1)
+    return render_template("edit_bucket.html", task=task, categories=categories)
 
 
 # Add Task Function
