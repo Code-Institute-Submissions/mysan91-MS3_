@@ -155,6 +155,7 @@ def delete_bucketlist(bucketlist_id):
     mongo.db.tasks.remove({"_id": ObjectId(bucketlist_id)})
     flash("Task has been Deleted")
     return redirect(url_for("bucketlist"))
+    
 # Add Task Function
 
 
