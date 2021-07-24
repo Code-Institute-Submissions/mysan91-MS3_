@@ -127,33 +127,36 @@ The website uses Materialize CSS on following:
 
 ### Technologies used 
 
-Languages:
+#### Languages:
 
 * HTML5
-HTML was used for the main structure of the website.
-* CSS3
-CSS was used to style and change sizes. 
-* Javascript
-Was used on the dynamic functions on the site 
-* Python3 
-Used as Back-End programming language
+  * HTML was used for the main structure of the website.
 
-Frameworks, libraies and other 
+* CSS3
+  * CSS was used to style and change sizes. 
+
+* Javascript
+ * Was used on the dynamic functions on the site 
+
+* Python3 
+ * Used as Back-End programming language
+
+#### Frameworks, libraies and other 
 
 * Materialize 
-  Materialize is used to design the framework. 
+  * Materialize is used to design the framework. 
 
 * Pymongo 
- Used as Python's API for MongoDB intergration.
+  * Used as Python's API for MongoDB intergration.
 
 * Flask
- Rendering template, URIs Requests and the flash messages.
+  * Rendering template, URIs Requests and the flash messages.
 
 * BSON
-  for accessing the data in MongoDB and to access IDs. 
+  * for accessing the data in MongoDB and to access IDs. 
 
 * Werkzeug
-   Werkzeug is used for the User to hash password when registering to the site and encrypting on MongoDB.
+   * Werkzeug is used for the User to hash password when registering to the site and encrypting on MongoDB.
 
 * MongoDB 
    MongoDB is used to store all data for the website.
@@ -161,13 +164,17 @@ Frameworks, libraies and other
 * Heroku
   Used for hosting my full stack app.
 
-Requests and flash messages.
 * Jquery
+  *  JQuery was used for materialize features that needed javascript.
 
-JQuery was used for materialize features that needed javascript.
-* Materialize CSS
+* Gitpod 
+  * The Gitpod is used to develop the project. 
 
+* Git 
+  * The Git was used for cersion control to commit and push to github. 
 
+* Github
+  * The Github is used to develop the project.   
 
 
 
