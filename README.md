@@ -144,10 +144,10 @@ The website uses Materialize CSS on following:
   * CSS was used to style and change sizes. 
 
 * Javascript
- * Was used on the dynamic functions on the site 
+  * Was used on the dynamic functions on the site 
 
 * Python3 
- * Used as Back-End programming language
+  * Used as Back-End programming language
 
 #### Frameworks, libraies and other 
 
@@ -167,10 +167,10 @@ The website uses Materialize CSS on following:
    * Werkzeug is used for the User to hash password when registering to the site and encrypting on MongoDB.
 
 * MongoDB 
-   MongoDB is used to store all data for the website.
+   * MongoDB is used to store all data for the website.
 
 * Heroku
-  Used for hosting my full stack app.
+  * Used for hosting my full stack app.
 
 * Jquery
   *  JQuery was used for materialize features that needed javascript.
