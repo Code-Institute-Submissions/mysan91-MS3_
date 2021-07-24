@@ -231,10 +231,16 @@ The website uses Materialize CSS on following:
 * Tested to edit a category and that worked well. 
 * Tested to delete a category and that worked well. 
 
+#### Testing in different browsers
+
 | Tested funcitons  | Sections tested |
 | ------------- | ------------- |
 | Responsiveness  | Login  |
 | Content Cell  | Content Cell  |
+
+##### Testing against the user stories 
+
+
 
 ##### Responsiv test
 In this test i used the Google inspect tool 
