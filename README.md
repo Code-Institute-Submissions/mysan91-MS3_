@@ -237,14 +237,20 @@ The following devices were used:
   * When testing the responsivness for the BenQ, All of the sites and content adjust fine and worked well. 
  
 ## Deployment 
-The following steps i made to deploy the project on to the github page.
-1. Log in to the github account. 
-2. Pick the repositorie with the name Milestoneprojecttwo. 
-3. After you click on the repositorie push the settings button. 
-4. Scroll down to the Github pages under the source section. 
-5. Click on the none bar and change it to Master.
-6. Save the changes! 
-7. The page then did refresh and the page is published at 
+
+#### Requirements
+* Python3
+* Github account
+* Heroku account
+* MongoDB account
+
+### Clone the project 
+
+* Log in to GitHub and go to the repository you want to clone. 
+* Click on the green button with the text Code.
+* Click on “Open with GitHub Desktop” and follow the prompts in the GitHub Desktop Application
+
+
 
 ### Deploymen Mongo DB 
 Mongo DB is used for tha database in this project 
@@ -255,14 +261,16 @@ Start by going to https://www.mongodb.com/ and creata a account.
 4. Users, Tasks, categories has already been created on step 3.
 5. To insert documents to a collection click on the collection categories and then insert document.
 6. The following string collections was used: 
-* category_name 
-* task_name
-* task_description
-* start_date
-* due_date
-* created_by 
-* username
-* password
+  * category_name 
+  * task_name
+  * task_description
+  * start_date
+  * due_date
+  * created_by 
+  * username
+  * password
+  * Bucketlist_number
+  * Bucketlist_description 
 
 7. Go back to github and the repository.
 8. Above the list of files click on the code button. 
@@ -281,7 +289,8 @@ Start by going to https://www.mongodb.com/ and creata a account.
 14. And pick python and version.
 15. Copy the link and paste it in the ("MONGO_URI", "enter value")
 16. Update the undername and password in the link.
-17. 
+
+
 ### Run the code locally
 1. On the github page navigate to the main page of the repository you want to run. Check repository https://github.com/mysan91/MS3 
 2. Above the list of files press on the code button with the downloadinglink.  
