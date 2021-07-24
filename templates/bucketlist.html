@@ -10,9 +10,11 @@
             <div class="card">
                 <div class="card-content white-text left-align">
                     <strong>{{ bucketlist.bucketlist_number }}.  {{ bucketlist.bucketlist_description }}</strong>
+                    <div style="float:right;clear:right;margin-left:20px">
                     <a href="{{ url_for('delete_bucketlist', bucketlist_id=bucketlist._id) }}"
                     class="btn-small green accent-4 right-align">Done</a>
-                    <a href="{{ url_for('edit_bucket', bucketlist_id=bucketlist._id) }}" class="btn-small light-blue lighten-1">Edit</a>
+                    <a href="{{ url_for('edit_bucket', bucketlist_id=bucketlist._id) }}" class="btn-small light-blue lighten-1 right-align">Edit</a>
+                </div>
                 </div>
                 </div>
         </div>
