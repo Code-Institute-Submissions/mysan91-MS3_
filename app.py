@@ -132,19 +132,18 @@ def add_bucket():
 # Edit bucketlist
 
 
-@app.route("/edit_bucketlist/<bucketlist_id>", methods=["GET", "POST"])
-def edit_bucketlist(bucketlist_id):
+@app.route("/edit_bucket/<bucketlist_id>", methods=["GET", "POST"])
+def edit_bucket(bucketlist_id):
     if request.method == "POST":
-
         submit = {
+            "category_name": request.form.get("category_name"),
             "bucketlist_number": request.form.get("bucketlist_number"),
             "bucketlist_description": request.form.get("bucketlist_description"),
-         }
+        }
         mongo.db.bucketlist.update({"_id": ObjectId(bucketlist_id)}, submit)
-        flash("Bucketlist item updated")
+        flash("Bucketlist Successfully Updated")
 
     bucketlist = mongo.db.bucketlist.find_one({"_id": ObjectId(bucketlist_id)})
-    bucketlist = mongo.db.bucketlist_number.find().sort("bucketlist_number", 1)
     return render_template("edit_bucket.html", bucketlist=bucketlist,)
 
 # Delete bucketlist Function
@@ -155,7 +154,7 @@ def delete_bucketlist(bucketlist_id):
     mongo.db.bucketlist.remove({"_id": ObjectId(bucketlist_id)})
     flash("Bucketlist item has been deleted")
     return redirect(url_for("bucketlist"))
-    
+
     # Add Task Function
 
 
