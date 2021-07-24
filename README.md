@@ -269,6 +269,7 @@ The following devices were used:
 
 
 ### Deploymen Mongo DB 
+
 Mongo DB is used for tha database in this project 
 Start by going to https://www.mongodb.com/ and creata a account. 
 1. Start by creating a new Cluster. 
@@ -317,13 +318,21 @@ Start by going to https://www.mongodb.com/ and creata a account.
 7. Press enter to create the local clone. 
 
 ### Deployment Heroku 
-1. Created a new application using the Heroku dashboard.
-2. Go to settings tab, click on 'reveal config vars' and add config vars such as IP (0.0.0.0), PORT (5000), MongoDB Name, MongoDB URI URL with DB name and password.
-3. Install Heroku via the console using npm install -g Heroku.
-4. Push two new files (requirements.txt and Profile) to repository.
-5. Now in In Heroku, you can Enable Automatic Deployment
-6. Then deploy branch.
-7. That can take a minute to build, once it's done, The message ‘Your app was successfully deployed.’ will be shown then Click ‘View’ to launch your new app: https://ms3taskmanager.herokuapp.com/
+1. After loging into heroku I created a new application using the Heroku dashboard.
+2. Select application milestone
+3. In the settings tab I clicked reveal config vars and entered the required environment variables, which in this case were:
+4. Go to settings tab, click on 'reveal config vars' and add config vars such as:
+ * IP (0.0.0.0)
+ * PORT (5000)
+ * MONGO_URI "mongodb+srv://milestone3:Porsche997@milestone.3exkg.mongodb.net/Task_manager?retryWrites=true&w=majority")
+ * SECRET secret key for flask session 
+ 
+5. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub
+6. Confirm the linking of the heroku app to the correct GitHub repository in this case MS3
+7. In the heroku dashboard, click "Deploy".
+8. In the Manual Deployment section of this page, made sure the master branch is selected and then click "Deploy Branch".
+9. The site is now successfully deployed.
+10. That can take a minute to build, once it's done, The message ‘Your app was successfully deployed.’ will be shown then Click ‘View’ to launch your new app: https://ms3taskmanager.herokuapp.com/
 
 
 
