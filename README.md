@@ -194,7 +194,7 @@ The website uses Materialize CSS on following:
     <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/warning.JPG" style="width:200px">
 
 * CSS: I have used https://jigsaw.w3.org/css-validator/ in order to validate the CSS code.
-<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addcategory.JPG" style="width:200px">
+<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/cssvalidate.JPG" style="width:200px">
 
 
 
