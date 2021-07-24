@@ -123,7 +123,7 @@ def add_bucket():
             "bucketlist_description": request.form.get("bucketlist_description"),
         }
         mongo.db.bucketlist.insert_one(bucketlist)
-        flash("bucketlist item Successfully Added")
+        flash("Bucketlist item Successfully Added")
         return redirect(url_for("bucketlist"))
 
     bucketlist = mongo.db.bucketlist.find().sort("bucketlist_number", 1)
@@ -152,11 +152,11 @@ def edit_bucketlist(bucketlist_id):
 
 @app.route("/delete_bucketlist/<bucketlist_id>")
 def delete_bucketlist(bucketlist_id):
-    mongo.db.tasks.remove({"_id": ObjectId(bucketlist_id)})
-    flash("Task has been Deleted")
+    mongo.db.bucketlist.remove({"_id": ObjectId(bucketlist_id)})
+    flash("Bucketlist item has been deleted")
     return redirect(url_for("bucketlist"))
     
-# Add Task Function
+    # Add Task Function
 
 
 @app.route("/add_task", methods=["GET", "POST"])
