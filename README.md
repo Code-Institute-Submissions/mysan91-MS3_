@@ -186,13 +186,12 @@ The website uses Materialize CSS on following:
 ## Testing
 
 * HTML: I have used https://validator.w3.org/ in order to validate the HTML code.
-<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addcategory.JPG" style="width:200px">
-
-
 * No errors to show.
    * With testing the HTML code, I had some syntax issues on all pages.
-    I tested the HTML code by running my server locally and used view page source. This code I passed through the validator.
-    I got one warning that Section lacks heading h2-h6. I have got this warning because I have put my flash messages between sections instead. 
+    I tested the HTML code by running my server locally and used view page source. And then it passed in the validator.
+    I did get one warning that Section lacks heading h2-h6. I have got this warning because I have put my flash messages between sections instead. 
+    
+    <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/warning.JPG" style="width:200px">
 
 * CSS: I have used https://jigsaw.w3.org/css-validator/ in order to validate the CSS code.
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addcategory.JPG" style="width:200px">
@@ -211,11 +210,11 @@ The website uses Materialize CSS on following:
 * User want to see the tasks 
     * The user can now click on the task item in the navbar to get to the tasks site and see all the tasks that the user have.
 
-* User want to edit or mark a task as done.
-  * The user can easely edit and mark the task as done in the tasks meny, Under each tasks the two buttons edit and done shows. 
+* User want to edit or mark a task or bucketlist item as done.
+  * The user can easily edit and mark the task as done in the tasks meny, Under each tasks the two buttons edit and done shows. 
     The done button takes away the task. And the edit button takes you to an other site were your can make changes to your current task. 
 
-* User want to make a new task
+* User want to make a new task or new bucketlist item 
   * The user can click on New task, And start adding category, task name and task description, start date and due date. Then click on add task and the task will be added to the Tasks site. 
 
 * User want to manage Categories 
@@ -235,6 +234,7 @@ The website uses Materialize CSS on following:
 * Tested to manage categories and add a category and that worked well. 
 * Tested to edit a category and that worked well. 
 * Tested to delete a category and that worked well. 
+* Tested the different pages on mobile and tablet. 
 
 #### Testing in different browsers
 
