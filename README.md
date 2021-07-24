@@ -91,8 +91,10 @@ The project is only a personal task manager and i only want the user to se its o
 
 #### Se all tasks 
 
-* User can see all tasks 
-* User can edit/delete the task 
+* Delete button: This button is to the user and will allow the user to remove the task och bucketlist. 
+
+* Edit button: This button is to the user and will allow the user to edit the tack or bucketlist item by redirecting the user to the "edit task or bucketlist" page.
+* 
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/tasks.JPG" style="width:200px">
 
 #### Manage Categorys 
