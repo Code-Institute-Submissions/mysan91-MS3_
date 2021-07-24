@@ -266,6 +266,25 @@ The following devices were used:
 * Click on the green button with the text Code.
 * Click on “Open with GitHub Desktop” and follow the prompts in the GitHub Desktop Application
 
+### Local deployment
+
+1. I created a GitHub reposiroty using the Gitpod full template.
+2. I installed Flask, Flask-pymongo and dnspython.
+3. I created a env.py file with the enviroment variables: 
+   * import os
+   * os.environ.setdefault("IP", "0.0.0.0")
+   * os.environ.setdefault("PORT", "5000")
+   * os.environ.setdefault("SECRET_KEY", "SECRET_NUMBER")
+   * os.environ.setdefault("MONGO_URI", "mongodb+srv://milestone3:Porsche997@milestone.3exkg.mongodb.net/Task_manager?retryWrites=true&w=majority")
+   * os.environ.setdefault("MONGO_DBNAME", "Task_manager")
+
+5. i added a gitignore and added: 
+  * env.py
+  * __pycache__/
+  
+6. in the app.py file i added: 
+7. <img src="" style="width:200px">
+
 
 
 ### Deploymen Mongo DB 
