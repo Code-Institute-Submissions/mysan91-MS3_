@@ -89,9 +89,15 @@ The project is only a personal task manager and i only want the user to se its o
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addtasks.JPG" style="width:200px">
 
 #### Se all tasks 
+
+* User can see all tasks 
+* User can edit/delete the task 
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/tasks.JPG" style="width:200px">
 
 #### Manage Categorys 
+
+* User can see all categorys
+* User can edit/delete categorys
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addcategory.JPG" style="width:200px">
 
 #### Bucketlist
@@ -120,46 +126,48 @@ The website uses Materialize CSS on following:
 * Posibility to se att the completed tasks. 
 
 ### Technologies used 
+
 Languages:
 
 * HTML5
 HTML was used for the main structure of the website.
 * CSS3
 CSS was used to style and change sizes. 
-
 * Javascript
 Was used on the dynamic functions on the site 
-
 * Python3 
 Used as Back-End programming language
 
+Frameworks, libraies and other 
+
+* Materialize 
+  Materialize is used to design the framework. 
+
 * Pymongo 
-Used as Python's API for MongoDB intergration.
+ Used as Python's API for MongoDB intergration.
 
-* Flask rendering template, URIs Requests and the flash messages.
+* Flask
+ Rendering template, URIs Requests and the flash messages.
 
-* BSON for accessing the data in MongoDB and to access IDs. 
+* BSON
+  for accessing the data in MongoDB and to access IDs. 
 
-* Werkzeug was user to hash password when registering to the site and encrypting on MongoDB.
+* Werkzeug
+   Werkzeug is used for the User to hash password when registering to the site and encrypting on MongoDB.
 
-Database:
-* MongoDB was used to store all data for the website.
+* MongoDB 
+   MongoDB is used to store all data for the website.
 
 * Heroku
-Used for hosting my full stack app.
+  Used for hosting my full stack app.
 
 Requests and flash messages.
 * Jquery
+
 JQuery was used for materialize features that needed javascript.
 * Materialize CSS
 
 
-Tools & Libraries:
-*	Gitpod
-* Github
-*	Font-Awsome
-*	Google Fonts
-* Google Chrome
 
 
 
