@@ -64,22 +64,26 @@ The project is only a personal task manager and i only want the user to se its o
 * Se all the tasks that the user have
 
 
-## Design Choices 
+## Features 
+
+### Design Choices 
 
 #### Home page
-* A hero image 
-* Hero text with a short about section
+* A attractive and simple layout that is easy to understand.
 * Log in / register navbar 
-* Footer with a contact form 
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/home.JPG" style="width:200px">
 
 ##### Log in/ register page
+* People can create a new account on the web registration form. 
+* People can login with their existing accounts.
+* Users can easely log in or out. 
+
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/registrer.JPG" style="width:100px">
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/signin.JPG" style="width:100px">
 
 #### Add task 
-<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addtasks.JPG" style="width:200px">
 
+<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addtasks.JPG" style="width:200px">
 
 #### Se all tasks 
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/tasks.JPG" style="width:200px">
@@ -87,8 +91,13 @@ The project is only a personal task manager and i only want the user to se its o
 #### Manage Categorys 
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addcategory.JPG" style="width:200px">
 
+#### Bucketlist
 
-### Styling 
+
+#### Tasks/Bucketlist
+
+* tasks and bucketlist items can be created, read, updated and deleted (CRUD) by the users.
+* Users have access to their profile.
 
 ### Features that is implemented:
 
@@ -109,7 +118,7 @@ The website uses Materialize CSS on following:
 
 ### Features left to implement
 * Posibility to sort all tasks in one category 
-
+* Posibility to se att the completed tasks. 
 
 ### Technologies used 
 Languages:
