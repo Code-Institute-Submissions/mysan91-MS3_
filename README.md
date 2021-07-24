@@ -238,11 +238,11 @@ The website uses Materialize CSS on following:
 | Responsiveness  | Login  |
 | Content Cell  | Content Cell  |
 
-##### Testing against the user stories 
+#### Testing against the user stories 
 
 
 
-##### Responsiv test
+#### Responsiv test
 In this test i used the Google inspect tool 
 The following devices were used: 
 
