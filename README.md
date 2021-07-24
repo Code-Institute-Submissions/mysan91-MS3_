@@ -9,7 +9,7 @@
 The project is a tool to get structure in your life and plan your activities. 
 So i decided to do a personal task manager were your can structure your activities. 
 
-## Creating 
+## Creating Preparation
 After making the mini project i wanted to do my own way of a task manager and add a different structure to it. 
 
 I wanted to build something that is suitabele for my life and what i need to get a good structure and overview of my to do tasks. 
@@ -19,9 +19,6 @@ I started by watching the mini project structure again bit by bit to get a good 
 First off i did almost the same ground coding as the mini project with a few different tasks input. And also a different type of structure of the different pages. 
 
 The project is only a personal task manager and i only want the user to se its own tasks and not everyone elses tasks. 
-
-## Preparation
-
 
 ## UX 
 
@@ -189,10 +186,18 @@ The website uses Materialize CSS on following:
 ## Testing
 
 * HTML: I have used https://validator.w3.org/ in order to validate the HTML code.
+<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addcategory.JPG" style="width:200px">
+
+
+* No errors to show.
+   * With testing the HTML code, I had some syntax issues on all pages.
+    I tested the HTML code by running my server locally and used view page source. This code I passed through the validator.
+    I got one warning that Section lacks heading h2-h6. I have got this warning because I have put my flash messages between sections instead. 
 
 * CSS: I have used https://jigsaw.w3.org/css-validator/ in order to validate the CSS code.
+<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addcategory.JPG" style="width:200px">
 
-* JavaScript: I have used https://jshint.com/ in order to check the JavaScript code.
+
 
 
 #### User story Testing 
@@ -233,16 +238,13 @@ The website uses Materialize CSS on following:
 
 #### Testing in different browsers
 
-| Tested funcitons  | Sections tested |
+| Browser | Status |
 | ------------- | ------------- |
-| Responsiveness  | Login  |
-| Content Cell  | Content Cell  |
-
-#### Testing against the user stories 
-
-
+| Chrome  | Works well without issues  |
+| Safari  | Works well without issues   |
 
 #### Responsiv test
+
 In this test i used the Google inspect tool 
 The following devices were used: 
 
@@ -257,6 +259,11 @@ The following devices were used:
   All the different sizes worked fine. 
 * Benq 24 inch screen 
   * When testing the responsivness for the BenQ, All of the sites and content adjust fine and worked well. 
+
+* Chrome 
+   * Works well on mobile and on tablets and other screens. 
+* Safari 
+   * Works well on mobile and on tablets and other screens.  
  
 ## Deployment 
 
