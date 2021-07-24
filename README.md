@@ -282,8 +282,17 @@ The following devices were used:
   * env.py
   * __pycache__/
   
-6. in the app.py file i added: 
-7. <img src="" style="width:200px">
+6. in the app.py file  i added: 
+7. <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/app.JPG" style="width:250px">
+
+and also import the env. 
+
+8. Before deploying i added the below code to the end of the app.py file and changed the debug=true to debug=False.
+
+if __name__ == "__main__":
+    app.run(host=os.environ.get("IP"),
+            port=int(os.environ.get("PORT")),
+            debug=True)
 
 
 
@@ -327,27 +336,22 @@ Start by going to https://www.mongodb.com/ and creata a account.
 16. Update the undername and password in the link.
 
 
-### Run the code locally
-1. On the github page navigate to the main page of the repository you want to run. Check repository https://github.com/mysan91/MS3 
-2. Above the list of files press on the code button with the downloadinglink.  
-3. To clone the repository using HTTPS, under "Clone with HTTPS", click on the https link and the link will be copyed. If you want to clone the repository using SSH or Github Cli click on the link tap ob the respective tabs. 
-4. After you have copy the link go to Git Bash and open. 
-5. Change the current working directory to the location where you want to put the cloned directory. 
-6. Type git clone and paste the repository URL.
-7. Press enter to create the local clone. 
-
 ### Deployment Heroku 
 1. After loging into heroku I created a new application using the Heroku dashboard.
 2. Select application milestone
-3. In the settings tab I clicked reveal config vars and entered the required environment variables, which in this case were:
-4. Go to settings tab, click on 'reveal config vars' and add config vars such as:
+3. I created requirements.txt and Procfile to the code before because that Heroku requires this to run the app:    
+    * pip3 freeze -- local > requirements.txt
+
+    * echo web: python app.py > Procfile
+   
+4. In the settings tab I clicked reveal config vars and entered the required environment variables, which in this case were:
  * IP (0.0.0.0)
  * PORT (5000)
  * MONGO_URI "mongodb+srv://milestone3:Porsche997@milestone.3exkg.mongodb.net/Task_manager?retryWrites=true&w=majority")
  * SECRET secret key for flask session 
  
 5. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub
-6. Confirm the linking of the heroku app to the correct GitHub repository in this case MS3
+6. Confirm the linking of the heroku app to the correct GitHub repository in this case MS3 and click connect. 
 7. In the heroku dashboard, click "Deploy".
 8. In the Manual Deployment section of this page, made sure the master branch is selected and then click "Deploy Branch".
 9. The site is now successfully deployed.
