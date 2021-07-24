@@ -84,8 +84,9 @@ The project is only a personal task manager and i only want the user to se its o
 
 #### Add task 
 
+* Form: The whole page is a form with different input types. The form used and all the input fields inside the form have been taken from Materialize.
 * tasks and bucketlist items can be created, read, updated and deleted (CRUD) by the users.
-* Sort by category and add category. 
+
 
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addtasks.JPG" style="width:200px">
 
@@ -105,6 +106,10 @@ The project is only a personal task manager and i only want the user to se its o
 
 #### Bucketlist
 
+
+#### Add Bucketlist 
+
+* Form: The whole page is a form with different input types. The form used and all the input fields inside the form have been taken from Materialize.
 
 
 ### Features that is implemented:
@@ -182,6 +187,14 @@ The website uses Materialize CSS on following:
 
 
 ## Testing
+
+* HTML: I have used https://validator.w3.org/ in order to validate the HTML code.
+
+* CSS: I have used https://jigsaw.w3.org/css-validator/ in order to validate the CSS code.
+
+* JavaScript: I have used https://jshint.com/ in order to check the JavaScript code.
+
+
 #### User story Testing 
 * User want to be able so register to the page. 
   * The user can navigate to the Register page and type in a new username and a password. 
