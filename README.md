@@ -368,7 +368,7 @@ Start by going to https://www.mongodb.com/ and creata a account.
 7. In the heroku dashboard, click "Deploy".
 8. In the Manual Deployment section of this page, made sure the master branch is selected and then click "Deploy Branch".
 9. The site is now successfully deployed.
-10. That can take a minute to build, once it's done, The message ‘Your app was successfully deployed.’ will be shown then Click ‘View’ to launch your new app: https://ms3taskmanager.herokuapp.com/
+10. That can take a minute to build, once it's done, The message ‘Your app was successfully deployed.’ will be shown then Click ‘View’ to launch your new app: https://ms3taskmanager.herokuapp.com
 
 
 
