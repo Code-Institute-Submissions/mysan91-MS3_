@@ -279,20 +279,20 @@ The following devices were used:
    * os.environ.setdefault("MONGO_DBNAME", "Task_manager")
 
 5. i added a gitignore and added: 
-  * env.py
-  * __pycache__/
+   * env.py
+   * __pycache__/
   
-6. in the app.py file  i added: 
-7. <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/app.JPG" style="width:250px">
+6. in the app.py i imported env.py and i added: 
+ <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/app.JPG" style="width:250px">
 
-and also import the env. 
+
 
 8. Before deploying i added the below code to the end of the app.py file and changed the debug=true to debug=False.
 
-if __name__ == "__main__":
-    app.run(host=os.environ.get("IP"),
-            port=int(os.environ.get("PORT")),
-            debug=True)
+     * if __name__ == "__main__":
+      * app.run(host=os.environ.get("IP"),
+       * port=int(os.environ.get("PORT")),
+        * debug=True)
 
 
 
