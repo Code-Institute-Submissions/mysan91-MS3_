@@ -20,18 +20,22 @@ First off i did almost the same ground coding as the mini project with a few dif
 
 The project is only a personal task manager and i only want the user to se its own tasks and not everyone elses tasks. 
 
+## Preparation
+
 
 ## UX 
 
-This site is mainly for personal use and not business.
-Its for a user looking to get a good view and structure of tasks on the to do list. 
+### Project goald 
 
-If you dont feel that you have a good structure and your want to have a system showing you all your tasks in different categorys this site is for your. 
+* Making a full-stack site that uses HTML, CSS, JavaScript, Python+Flask and MongoDB.
+* Creating a website that is easy to understand and work with.
+* Creating a website were you can have a good structure and a bucketlist. 
+* The user of the site can ute CRUD for the tasks and bucketlist.
 
 
 ### User Goals
-*	As a user type, i want to be able to contact the site owner. 
 *	As a user type, i want to be able to register and start an account. 
+*	As a user i want to be able to visit the site on every device so that i can access the site on my mobile or tablet. 
 *	As a user type, i want the site to be easely to navigate on. 
 *	AS a user type, i want to be able to search for a task 
 *	As a user type, i want to see how many tasks i have 
