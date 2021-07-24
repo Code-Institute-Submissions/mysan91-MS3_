@@ -83,6 +83,9 @@ The project is only a personal task manager and i only want the user to se its o
 
 #### Add task 
 
+* tasks and bucketlist items can be created, read, updated and deleted (CRUD) by the users.
+* Sort by category and add category. 
+
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addtasks.JPG" style="width:200px">
 
 #### Se all tasks 
@@ -94,10 +97,6 @@ The project is only a personal task manager and i only want the user to se its o
 #### Bucketlist
 
 
-#### Tasks/Bucketlist
-
-* tasks and bucketlist items can be created, read, updated and deleted (CRUD) by the users.
-* Users have access to their profile.
 
 ### Features that is implemented:
 
