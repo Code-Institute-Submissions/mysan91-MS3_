@@ -89,7 +89,7 @@ The project is only a personal task manager and i only want the user to se its o
 
 #### Se all tasks 
 
-* Delete button: This button is to the user and will allow the user to remove the task och bucketlist. 
+* Delete/done button: This button is to the user and will allow the user to remove the task och bucketlist. 
 
 * Edit button: This button is to the user and will allow the user to edit the tack or bucketlist item by redirecting the user to the "edit task or bucketlist" page.
 * 
@@ -102,6 +102,11 @@ The project is only a personal task manager and i only want the user to se its o
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/addcategory.JPG" style="width:200px">
 
 #### Bucketlist
+* Delete/done button: This button is to the user and will allow the user to remove the task och bucketlist. 
+
+* Edit button: This button is to the user and will allow the user to edit the tack or bucketlist item by redirecting the user to the "edit task or bucketlist" page.
+* 
+<img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/bucketlist.JPG" style="width:200px">
 
 
 #### Add Bucketlist 
@@ -129,6 +134,7 @@ The website uses Materialize CSS on following:
 ### Features left to implement
 * Posibility to sort all tasks in one category 
 * Posibility to se att the completed tasks. 
+* Take away the possibility for other users to see your tasks. 
 
 ### Technologies used 
 
