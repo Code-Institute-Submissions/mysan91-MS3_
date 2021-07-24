@@ -147,14 +147,14 @@ def edit_bucketlist(bucketlist_id):
     bucketlist = mongo.db.bucketlist_number.find().sort("bucketlist_number", 1)
     return render_template("edit_bucket.html", bucketlist=bucketlist,)
 
-# Delete Tasktype Function
+# Delete bucketlist Function
 
 
 @app.route("/delete_bucketlist/<bucketlist_id>")
 def delete_bucketlist(bucketlist_id):
     mongo.db.tasks.remove({"_id": ObjectId(bucketlist_id)})
     flash("Task has been Deleted")
-    return redirect(url_for("get_tasks"))
+    return redirect(url_for("bucketlist"))
 # Add Task Function
 
 
