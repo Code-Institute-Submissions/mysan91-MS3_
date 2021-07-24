@@ -77,6 +77,7 @@ The project is only a personal task manager and i only want the user to se its o
 * People can create a new account on the web registration form. 
 * People can login with their existing accounts.
 * Users can easely log in or out. 
+* Flash message If the username is not registered or if the password is incorrect an error message will appear.
 
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/registrer.JPG" style="width:100px">
 <img src="https://raw.githubusercontent.com/mysan91/MS3/master/static/images/signin.JPG" style="width:100px">
